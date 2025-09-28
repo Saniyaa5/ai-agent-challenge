@@ -109,12 +109,12 @@ ai-agent-challenge/
 
 ## Agent Workflow
 
-1. **Extract PDF summary**: Reads first pages of PDF to generate a prompt.
-2. **Read CSV sample**: Provides expected schema & sample to agent.
-3. **Generate parser**: Calls LLM API (Groq) to generate `parse(pdf_path)` function.
-4. **Test parser**: Runs generated parser on PDF and compares to CSV using `DataFrame.equals()`.
-5. **Self-correction loop**: Up to 3 attempts; if failed, fallback parser is used.
-6. **Display output**: Shows parsed table previews and side-by-side comparison in console.
+1. Extract PDF summary: Reads first pages of PDF to generate a prompt.
+2. Read CSV sample: Provides expected schema & sample to agent.
+3. Generate parser: Calls LLM API (Groq) to generate `parse(pdf_path)` function.
+4. Test parser: Runs generated parser on PDF and compares to CSV using `DataFrame.equals()`.
+5. Self-correction loop: Up to 3 attempts; if failed, fallback parser is used.
+6. Display output: Shows parsed table previews and side-by-side comparison in console.
 
 ---
 
